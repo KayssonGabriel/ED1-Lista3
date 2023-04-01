@@ -1,0 +1,39 @@
+package algoritmo493;
+
+public class Calc {
+
+	public static int busca(int[] vetor) {
+		for (int i = 0; i < vetor.length; i++) {
+			if (vetor[i] < vetor[i + 1]) {
+				int x = 0;
+				return x;
+			}
+		}
+		int x = 1;
+		return x;
+	}
+
+	public static int busca1(int[] vetor) {
+		for (int i = 0; i < vetor.length; i++) {
+			if (vetor[i] > vetor[i + 1]) {
+				int x = 0;
+				return x;
+			}
+		}
+		int x = 1;
+		return x;
+	}
+
+	void verificaOrdem(int[] vetor) {
+		int r = busca(vetor);
+		int r1 = busca1(vetor);
+		if (r == 0) {
+			System.out.println("ORDENAÇãO CRESCENTE ");
+		} else if (r1 == 0) {
+			System.out.println("ORDENAÇÃO DECRESCENTE");
+		} else {
+			System.out.println("NAO ESTA ORDENADO");
+		}
+	}
+
+}

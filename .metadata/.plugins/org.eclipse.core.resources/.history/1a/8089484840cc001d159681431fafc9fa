@@ -1,0 +1,39 @@
+package util;
+
+public class Calc {
+	private int divisor;
+	private int dividendo;
+
+	public Calc(int divisor, int dividendo) {
+		super();
+		this.divisor = divisor;
+		this.dividendo = dividendo;
+	}
+
+	public int getDivisor() {
+		return divisor;
+	}
+
+	public void setDivisor(int divisor) {
+		this.divisor = divisor;
+	}
+
+	public int getDividendo() {
+		return dividendo;
+	}
+
+	public void setDividendo(int dividendo) {
+		this.dividendo = dividendo;
+	}
+
+	public void divisor(int dividendo, int divisor) {
+		int vezes = 0;
+
+		while (dividendo % divisor == 0) {
+			vezes++;
+			dividendo /= divisor;
+		}
+
+	}
+
+}

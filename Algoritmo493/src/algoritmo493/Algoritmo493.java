@@ -1,0 +1,28 @@
+package algoritmo493;
+
+import java.util.Scanner;
+
+public class Algoritmo493 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite a quantidade de elementos: ");
+		int tamanho = sc.nextInt();
+
+		int[] vetor = new int[tamanho];
+		
+		for (int i = 0; i < vetor.length; i++) {
+			System.out.print("Digite numero " + (i + 1) + ": ");
+			vetor[i] = sc.nextInt();
+			sc.nextLine();
+		}
+		Calc calc = new Calc();
+		calc.verificaOrdem(vetor);
+		
+		
+		sc.close();
+
+	}
+
+}

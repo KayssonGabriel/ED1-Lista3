@@ -1,0 +1,13 @@
+package algoritmo495;
+
+import java.util.Arrays;
+
+public class Calc {
+	void ordena(String[] vetor) {
+		Arrays.sort(vetor);
+
+		for (String nome : vetor) {
+			System.out.println(nome);
+		}
+	}
+}

@@ -1,0 +1,33 @@
+package util;
+
+public class Calc {
+	private double ang;
+	private double r;
+	
+	
+
+	public Calc(double ang) {
+		super();
+		this.ang = ang;
+	}
+
+	public double getAng() {
+		return ang;
+	}
+
+	public void setAng(double ang) {
+		this.ang = ang;
+	}
+
+	public double getR() {
+		return r;
+	}
+
+	public void setR(double r) {
+		this.r = r;
+	}
+
+	public double radiano(double ang) {
+		
+	}
+}

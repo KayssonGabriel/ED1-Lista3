@@ -1,0 +1,35 @@
+package algoritmo494;
+
+public class Algoritmo494 {
+
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] nome = new String[3];
+        String[] ender = new String[3];
+        String[] prof = new String[3];
+
+        for (int i = 0; i < 3; i++) {
+            System.out.print("Digite nome: ");
+            nome[i] = sc.nextLine();
+            System.out.print("Digite endereco: ");
+            ender[i] = sc.nextLine();
+            System.out.print("Digite profissao: ");
+            prof[i] = sc.nextLine();
+        }
+
+        for (int i = 0; i < 2; i++) {
+            for (int j = i + 1; j < 3; j++) {
+                if (nome[i].compareTo(nome[j]) > 0) {
+                    troca(nome, i, j);
+                    troca(ender, i, j);
+                    troca(prof, i, j);
+                }
+            }
+        }
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println(nome[i] + "\t" + ender[i] + "\t" + prof[i]);
+        }
+
+        sc.close();
+    }

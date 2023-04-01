@@ -1,0 +1,17 @@
+package algoritmo490;
+
+public class Calc {
+	@SuppressWarnings("unlikely-arg-type")
+	int restantes(String[] vet, int tam, char x) {
+		int cont = 0;
+
+		for (int i = 0; i < tam; i++) {
+				vet[i] = "*";
+				cont++;
+			}
+	
+
+
+		return cont;
+	}
+}

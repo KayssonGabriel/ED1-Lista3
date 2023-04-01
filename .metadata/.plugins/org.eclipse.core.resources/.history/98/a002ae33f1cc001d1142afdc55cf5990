@@ -1,0 +1,18 @@
+package algoritmo490;
+
+public class Calc {
+	int restantes(String[] vetor, int tamanho, String letra) {
+		int cont = 0;
+
+		for (int i = 0; i < tamanho; i++) {
+			if (vetor[i].equals(letra)) {
+				vetor[i] = "*";
+				cont++;
+			}
+		}
+		return cont;
+
+	}
+
+
+}

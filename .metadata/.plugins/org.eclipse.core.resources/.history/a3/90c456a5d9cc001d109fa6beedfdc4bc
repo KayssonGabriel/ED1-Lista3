@@ -1,0 +1,32 @@
+package algoritmo485;
+
+import java.util.Scanner;
+
+public class Algoritmo485 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("digite a quantidade de elementos");
+		int quantidade = sc.nextInt();
+
+		int[] vetorNum = new int[quantidade];
+		int[] vetorCaractere = new int[quantidade];
+
+		System.out.println("vetor Número");
+		for (int i = 0; i < vetorNum.length; i++) {
+			System.out.println("Digite o número " + (i+1) + ": ");
+			vetorNum[i] = sc.nextInt();
+		}
+
+		System.out.println("vetor caractere");
+		for (int i = 0; i < vetorCaractere.length; i++) {
+			System.out.println("Digite o caractere " + (i+1) + ": ");
+			vetorCaractere[i] = sc.nextInt();
+		}
+
+		sc.close();
+
+	}
+
+}

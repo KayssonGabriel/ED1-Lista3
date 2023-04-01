@@ -1,0 +1,8 @@
+package algoritmo485;
+
+public class Calc {
+	void multivetor(int vetorNum, char vetorCaractere, int quantidade) {
+		for (int i = 0; i)
+	}
+
+}

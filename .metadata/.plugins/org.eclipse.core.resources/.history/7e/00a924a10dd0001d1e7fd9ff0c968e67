@@ -1,0 +1,27 @@
+package algoritmo490;
+
+import java.util.Scanner;
+
+public class Algoritmo490 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Digite a quantidade de elementos: ");
+		int tamanho = sc.nextInt();
+
+		String[] vetor = new String[tamanho];
+
+		for (int i = 0; i < vetor.length; i++) {
+			System.out.print("Digite a palavra em letras minúsculas " + (i + 1) + ": ");
+			vetor[i] = sc.next();
+			sc.nextLine(); // Consumir nova linha pendente
+		}
+
+		Calc calc = new Calc();
+		calc.restantes(vetor);
+
+		sc.close();
+	}
+
+}

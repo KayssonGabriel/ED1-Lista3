@@ -1,0 +1,36 @@
+package algoritmo481;
+
+import java.util.Scanner;
+
+public class Algoritmo481 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("digite numero maior ou igual a 0: ");
+		int num = sc.nextInt();
+
+		while (num < 0) {
+			System.out.println("Numero negativo.Digite numero maior ou igual a 0: ");
+			num = sc.nextInt();
+		}
+
+		System.out.print("digite a base em deseja representa-lo(2-10): ");
+		int base = sc.nextInt();
+
+		while (base < 2 || base > 10) {
+			System.out.println("Nao sei converter.Digite a base em desejarepresenta-lo(2-10): ");
+			base = sc.nextInt();
+		}
+
+		Calc calc = new Calc();
+		
+
+		System.out.println("número em decimal: " + num);
+		System.out.println("número na base " + base + " : " + calc.converte(num, base));
+		System.out.println();
+
+		sc.close();
+	}
+
+}

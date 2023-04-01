@@ -1,0 +1,34 @@
+package util;
+
+public class Calc {
+	private double l;
+	private double b;
+
+	public Calc(double l, double b) {
+		super();
+		this.l = l;
+		this.b = b;
+	}
+
+	public double getL() {
+		return l;
+	}
+
+	public void setL(double l) {
+		this.l = l;
+	}
+
+	public double getB() {
+		return b;
+	}
+
+	public void setB(double b) {
+		this.b = b;
+	}
+	
+	public double log(double l, double b) {
+		double i = Math.log(b)/Math.log(l);
+		return i;
+	}
+
+}

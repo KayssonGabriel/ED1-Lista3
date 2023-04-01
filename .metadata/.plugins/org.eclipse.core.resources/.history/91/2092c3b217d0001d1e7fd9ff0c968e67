@@ -1,0 +1,35 @@
+package algoritmo495;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class Calc {
+	void ordena(String[] vetor) {
+		Arrays.sort(vetor, new Comparator<String>() {
+			@Override
+			public int compare(String o1, String o2) {
+				String[] partes1 = o1.split("\\s+");
+				String[] partes2 = o2.split("\\s+");
+
+				// Comparando pelo último sobrenome
+				int comp = partes1[partes1.length - 1].compareTo(partes2[partes2.length - 1]);
+
+				if (comp != 0) {
+					return comp;
+				}
+
+				// Se os sobrenomes forem iguais, comparar pelos primeiros nomes
+				if (partes1.length > 1 && partes2.length > 1) {
+					return partes1[0].compareTo(partes2[0]);
+				} else {
+					// Caso contrário, comparar pelos nomes completos
+					return o1.compareTo(o2);
+				}
+			}
+		});
+
+		for (String nome : vetor) {
+			System.out.println(nome);
+		}
+	}
+}

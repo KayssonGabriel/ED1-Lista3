@@ -1,0 +1,29 @@
+package algoritmo497;
+
+import java.util.Arrays;
+
+public class Calc {
+	int x;
+	int pos;
+
+	void verifica(int[] vetor, int num) {
+		Arrays.sort(vetor);
+		for (int i = 0; i < vetor.length; i++) {
+			System.out.println((i + 1)+ " - "+ vetor[i]);
+			if (vetor[i] == num) {
+				x = 1;
+				pos = i;
+				break;
+			} else {
+				x = -1;
+			}
+		}
+		if(x == 1) {
+			System.out.println("posicao no vetor "+ (pos+1));
+		}else {
+			System.out.println("NÃO ENCONTRADO");
+		}
+
+	}
+
+}

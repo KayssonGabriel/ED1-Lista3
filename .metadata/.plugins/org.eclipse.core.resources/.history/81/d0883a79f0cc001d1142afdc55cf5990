@@ -1,0 +1,11 @@
+package algoritmo490;
+
+public class Calc {
+	int restantes(String[] vetor, int tamanho, char letra) {
+		int cont = 0;
+		
+		for (int i =0; i < tamanho; i++) {
+			if(vetor[i]==x)
+		}
+	}
+}

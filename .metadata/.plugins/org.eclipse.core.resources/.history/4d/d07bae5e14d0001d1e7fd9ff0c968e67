@@ -1,0 +1,19 @@
+package algoritmo495;
+
+public class Algoritimo495 {
+
+	public static void main(String[] args) {
+		System.out.print("Digite a quantidade de elementos: ");
+		int tamanho = sc.nextInt();
+
+		int[] vetor = new int[tamanho];
+		
+		for (int i = 0; i < vetor.length; i++) {
+			System.out.print("Digite numero " + (i + 1) + ": ");
+			vetor[i] = sc.nextInt();
+			sc.nextLine();
+		}
+
+	}
+
+}

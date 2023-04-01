@@ -1,0 +1,24 @@
+package util;
+
+public class Calc {
+	private char letra;
+
+	public Calc(char letra) {
+		super();
+		this.letra = letra;
+	}
+
+	public char getLetra() {
+		return letra;
+	}
+
+	public void setLetra(char letra) {
+		this.letra = letra;
+	}
+
+	public void verifica(char letra) {
+		if (letra == 'A') {
+			return = 0;
+		}
+	}
+}

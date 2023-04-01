@@ -1,0 +1,29 @@
+package util;
+
+public class Calc {
+	private char letra;
+
+	public Calc(char letra) {
+		super();
+		this.letra = letra;
+	}
+
+	public char getLetra() {
+		return letra;
+	}
+
+	public void setLetra(char letra) {
+		this.letra = letra;
+	}
+
+	public int verifica(char letra) {
+		switch (letra) {
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U':
+			return 0;
+		}
+	}
+}
